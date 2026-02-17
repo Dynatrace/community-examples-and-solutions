@@ -9,6 +9,12 @@ Connect Google Gemini with Dynatrace using this action for Workflows. It allows 
 - **Execute prompt:** define and execute the prompt defined in the workflow action
 - **Handle response:** store and analyze response
 
+<img width="750" alt="workflow" src="https://github.com/Dynatrace/community-examples/blob/main/dynatrace%20apps/gemini%20connector/workflow.png" />
+*Using Gemini connector in workflow*
+
+<img width="750" alt="workflow" src="https://github.com/Dynatrace/community-examples/blob/main/dynatrace%20apps/gemini%20connector/example" />
+*Illustrative example querying for logs and asking Gemini for explaining the error log*
+
 ---
 
 ## 🚀 Install the app on the Dynatrace platform
