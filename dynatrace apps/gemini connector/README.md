@@ -12,8 +12,8 @@ Connect Google Gemini with Dynatrace using this action for Workflows. It allows 
 <img width="750" alt="workflow" src="https://github.com/Dynatrace/community-examples/blob/main/dynatrace%20apps/gemini%20connector/workflow.png" />
 *Using Gemini connector in workflow*
 
-<img width="750" alt="workflow" src="https://github.com/Dynatrace/community-examples/blob/main/dynatrace%20apps/gemini%20connector/example" />
-*Illustrative example querying for logs and asking Gemini for explaining the error log*
+<img width="750" alt="example" src="https://github.com/Dynatrace/community-examples/blob/main/dynatrace%20apps/gemini%20connector/example.png" />
+*Illustrative example querying for logs and asking Gemini to explain the error log*
 
 ---
 
@@ -35,7 +35,7 @@ Create a new workflow and add a task to fetch the data you want analyzed (e.g., 
 - Example Query:
 
 
-### 2. Data Optimization
+### 2. (Optional) Data Optimization
 To save on token costs and improve response accuracy, use a script to extract only the necessary records before sending them to Gemini.
 
 - Action: Add a **Run JavaScript** task.
