@@ -10,9 +10,11 @@ Connect Google Gemini with Dynatrace using this action for Workflows. It allows 
 - **Handle response:** store and analyze response
 
 <img width="750" alt="workflow" src="https://github.com/Dynatrace/community-examples/blob/main/dynatrace%20apps/gemini%20connector/workflow.png" />
+
 *Using Gemini connector in workflow*
 
 <img width="750" alt="example" src="https://github.com/Dynatrace/community-examples/blob/main/dynatrace%20apps/gemini%20connector/example.png" />
+
 *Illustrative example querying for logs and asking Gemini to explain the error log*
 
 ---
