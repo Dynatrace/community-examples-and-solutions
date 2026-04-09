@@ -16,9 +16,9 @@ Whether you're showing costs back to teams or investigating optimization opportu
 
 **Simple. Transparent. Secure.**
 
-Before using the Cost Allocation Dashboard, make sure you have configured [Dynatrace Cost Allocation](https://community.dynatrace.com/t5/DPS-Cost-Allocation/).
+Before using the Cost Allocation Dashboard, make sure you have configured [Dynatrace Cost Allocation](https://docs.dynatrace.com/docs/license/cost-allocation).
 
-For questions and support, join the conversation in the [Dynatrace Community](https://community.dynatrace.com/t5/DPS-Cost-Allocation/).
+For questions and support, join the conversation in the [Dynatrace Community](https://community.dynatrace.com/t5/DPS-Cost-Allocation/gh-p/DPSCostAllocationpublic).
 
 <img width="1919" height="1199" alt="Screenshot" src="https://github.com/user-attachments/assets/771353df-2f85-4334-92da-e352c52a6346" />
 
@@ -56,11 +56,17 @@ Before you begin, ensure you have:
 
 ### Installation Steps
 1. **Download the JSON File**  
-   [Download Here](<ONE LINK here>)
+   Choose the version that fits your needs:
+   - [Standard version](DPS%20Cost%20Allocation%20Overview%20Dashboard%20v3.8.json) — cost overview by capability and cost center, no additional setup required.
+   - [With Query, Workflow & Functions support](DPS%20Cost%20Allocation%20Overview%20Dashboard%20v3.8%20w%20Query%2C%20Workflow%2C%20Functions%20support.json) & [Helper Notebook](Notebook%20helper/Cost%20Allocation%20with%20Lookup%20Tables%20Notebook%20v3.6.json) — additionally maps individual users to cost centers or products via a lookup table. Requires setting up a notebook and a workflow.
 
 2. **Import the Dashboard:**
    - Open the **Dashboards** app in your Dynatrace environment.
    - Click on **Import dashboard** and upload the downloaded JSON file.
+   - **If you downloaded the version with Query, Workflow & Functions support**, also import the helper notebook:
+     - Open the **Notebooks** app in your Dynatrace environment.
+     - Click on **Import notebook** and upload the helper notebook JSON file.
+     - Follow the instructions at the top of the notebook to create a lookup table that maps users to a cost center or product.
 
 3. **Adjust Variables:**
    - Configure the `price_points` variable with a JSON array that maps each capability key to its unit price. See [Configuring the `price_points` Variable](#%EF%B8%8F-configuring-the-price_points-variable) below for details.
@@ -115,7 +121,7 @@ Open the dashboard, navigate to the `price_points` variable, and edit the JSON a
 ---
 
 ## 🛠️ Support
-For additional help, visit the [Dynatrace Community](https://community.dynatrace.com/t5/DPS-Cost-Allocation/).
+For additional help, visit the [Dynatrace Community](https://community.dynatrace.com/t5/DPS-Cost-Allocation/gh-p/DPSCostAllocationpublic).
 
 ---
 
