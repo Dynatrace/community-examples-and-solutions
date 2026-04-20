@@ -88,7 +88,7 @@ When Dynatrace Intelligence detects a problem, Cloud SRE Agents automatically di
 | Problem Status	|  ACTIVE or CLOSED | 
 | Entity Type	| Affected entity type (HOST, SERVICE, PROCESS_GROUP, etc.) | 
 | Has Similar Problems	| Dynatrace identified similar historical problems (boolean) | 
-| Problem Field	| Match any problem field with equals / not_equals / contains / not_contains — useful for event.name, k8s.cluster.name, affected_entity_ids, or custom attributes | 
+| Problem Field	| Match any problem field with equals / not_equals / contains / not_contains — useful for `event.name`, `k8s.cluster.name`, `affected_entity_ids`, or custom attributes | 
 
 ## Budget
 | Filter	| Description | 
