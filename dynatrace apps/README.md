@@ -1,13 +1,13 @@
 # 🧑‍💻 Community Examples: Dynatrace Apps
 
-Welcome to the Dynatrace Apps examples folder! This space is dedicated to sharing, exploring, and contributing real-world Agentic AI use cases built with Dynatrace. Whether you're a Dynatrace user, partner, or customer, you're invited to contribute assets for use cases that showcase best practices, efficient setups, or innovative solutions.
+Welcome to the Dynatrace Apps examples folder! 
 
-## 🚀 Purpose
-This folder serves as a community-driven collection of use cases to help others:
+This space is dedicated to sharing, exploring, and contributing real-world Dynatrace app examples and use cases. It is a community-driven collection of use cases to help others:
 
 - Get inspired by real use cases
-- Accelerate setup
+- Share examples from customer projects
 
+Each folder in this repo represents an individual example. ** Happy browsing **
 
 ## ℹ️ How to install a "community app" via Hub
 Most of the apps listed in this repository can be obtained via the [Dynatrace Hub](https://docs.dynatrace.com/docs/shortlink/hub). We are using the [Hub subscriptions](https://docs.dynatrace.com/docs/shortlink/hub#add-subscription) concept for that, which allows us to deliver - community-built - Dynatrace Apps exactly the same way as any other app. 
@@ -18,6 +18,8 @@ Most of the apps listed in this repository can be obtained via the [Dynatrace Hu
     - Select "add subscription", add a meaningful name for the subscription, paste the provided ID, and select "Save changes".
     - Once this is done, you can search for the app in Hub and install it.
 
+## 🪲 Support
+In case you find an issue, please [file a new issue](https://github.com/Dynatrace/community-examples/issues). 
 
-## License
+## ℹ️ License
 All apps are provided under the [Apache License v2.0](https://github.com/Dynatrace/community-examples/blob/main/LICENSE.txt).
