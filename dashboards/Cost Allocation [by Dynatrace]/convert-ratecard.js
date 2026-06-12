@@ -101,6 +101,33 @@ if (!currencyMatch) {
 const currencyCode = currencyMatch[1];
 console.log(`Detected currency: ${currencyCode}`);
 
+function parsePrice(rawPrice, detectedCurrencyCode) {
+  let normalized = rawPrice.trim();
+
+  // Remove leading currency code (for example "USD 1.2K" -> "1.2K").
+  const currencyPrefix = new RegExp(`^${detectedCurrencyCode}\\s+`, 'i');
+  normalized = normalized.replace(currencyPrefix, '');
+
+  // Fallback for unexpected currency code variants.
+  normalized = normalized.replace(/^[A-Z]{3}\s+/i, '');
+
+  // Remove thousand separators before numeric conversion.
+  normalized = normalized.replace(/,/g, '');
+
+  // Expand shorthand thousands (for example "1.2K" -> "1200.00").
+  const kMatch = normalized.match(/^(\d+(?:\.\d+)?)K$/i);
+  if (kMatch) {
+    return (Number.parseFloat(kMatch[1]) * 1000).toFixed(2);
+  }
+
+  const numericValue = Number.parseFloat(normalized);
+  if (Number.isNaN(numericValue)) {
+    return normalized;
+  }
+
+  return numericValue.toFixed(2);
+}
+
 const formattedRateCard = [];
 const seen = new Set();
 
@@ -126,8 +153,8 @@ for (const rawLine of lines) {
   if (seen.has(key)) continue;
   seen.add(key);
 
-  // Price: strip thousand-separator commas ("1,111.84" → "1111.84")
-  const price = priceRaw.replace(/,/g, '');
+  // Price: remove currency prefix and normalize shorthand values.
+  const price = parsePrice(priceRaw, currencyCode);
 
   // priceUnit: first number group in unit-of-measure string ("Per 1,000,000 invocations" → "1000000")
   const priceUnitMatch = unitOfMeasure.match(/[\d,]+/);

@@ -1,26 +1,125 @@
 [
   {
-    "key": "COMPUTE",
-    "name": "AppEngine Functions - Small",
+    "key": "FOUNDATION_AND_DISCOVERY",
+    "name": "Foundation & Discovery",
     "price": "1000.00",
-    "Category": "AppEngine Functions",
-    "unitName": "invocations",
+    "Category": "Application and Infrastructure Observability",
+    "unitName": "host-hours",
+    "priceUnit": "100000",
+    "currencyCode": "USD"
+  },
+  {
+    "key": "FULLSTACK_MONITORING",
+    "name": "Full-Stack Monitoring",
+    "price": "1000.00",
+    "Category": "Application and Infrastructure Observability",
+    "unitName": "memory-gibibyte-hours",
+    "priceUnit": "100000",
+    "currencyCode": "USD"
+  },
+  {
+    "key": "INFRASTRUCTURE_MONITORING",
+    "name": "Infrastructure Monitoring",
+    "price": "4000.00",
+    "Category": "Application and Infrastructure Observability",
+    "unitName": "host-hours",
+    "priceUnit": "100000",
+    "currencyCode": "USD"
+  },
+  {
+    "key": "MAINFRAME_MONITORING",
+    "name": "Mainframe Monitoring",
+    "price": "1000.00",
+    "Category": "Application and Infrastructure Observability",
+    "unitName": "MSU-hours",
+    "priceUnit": "10000",
+    "currencyCode": "USD"
+  },
+  {
+    "key": "CODE_MONITORING",
+    "name": "Code Monitoring",
+    "price": "500.00",
+    "Category": "Container Observability",
+    "unitName": "Container-hour",
+    "priceUnit": "100000",
+    "currencyCode": "USD"
+  },
+  {
+    "key": "KUBERNETES_OPERATIONS",
+    "name": "Kubernetes Platform Monitoring",
+    "price": "200.00",
+    "Category": "Container Observability",
+    "unitName": "pod-hours",
+    "priceUnit": "100000",
+    "currencyCode": "USD"
+  },
+  {
+    "key": "LOG_MANAGEMENT_INGEST",
+    "name": "Log Management & Analytics - Ingest & Process",
+    "price": "2000.00",
+    "Category": "Log Analytics",
+    "unitName": "gibibytes",
+    "priceUnit": "10000",
+    "currencyCode": "USD"
+  },
+  {
+    "key": "LOG_MANAGEMENT_ANALYZE",
+    "name": "Log Management & Analytics - Query",
+    "price": "3500.00",
+    "Category": "Log Analytics",
+    "unitName": "gibibytes-scanned",
     "priceUnit": "1000000",
     "currencyCode": "USD"
   },
   {
-    "key": "AUTOMATIONS",
-    "name": "Automation Workflow",
-    "price": "1370.00",
-    "Category": "Automation",
-    "unitName": "workflow-hours",
-    "priceUnit": "10000",
+    "key": "LOG_MANAGEMENT_RETAIN",
+    "name": "Log Management & Analytics - Retain",
+    "price": "700.00",
+    "Category": "Log Analytics",
+    "unitName": "gibibyte-days",
+    "priceUnit": "1000000",
+    "currencyCode": "USD"
+  },
+  {
+    "key": "LOG_MANAGEMENT_RETAIN_WIQ",
+    "name": "Log Management & Analytics - Retain with Included Queries",
+    "price": "20000.00",
+    "Category": "Log Analytics",
+    "unitName": "gibibyte-days",
+    "priceUnit": "1000000",
+    "currencyCode": "USD"
+  },
+  {
+    "key": "RUNTIME_APPLICATION_PROTECTION",
+    "name": "Runtime Application Protection",
+    "price": "225.00",
+    "Category": "Application Security",
+    "unitName": "memory-gibibyte-hours",
+    "priceUnit": "100000",
+    "currencyCode": "USD"
+  },
+  {
+    "key": "RUNTIME_VULNERABILITY_ANALYTICS",
+    "name": "Runtime Vulnerability Analytics",
+    "price": "225.00",
+    "Category": "Application Security",
+    "unitName": "memory-gibibyte-hours",
+    "priceUnit": "100000",
+    "currencyCode": "USD"
+  },
+  {
+    "key": "SECURITY_POSTURE_MANAGEMENT",
+    "name": "Security Posture Management",
+    "price": "700.00",
+    "Category": "Application Security",
+    "unitName": "host-hours",
+    "priceUnit": "100000",
     "currencyCode": "USD"
   },
   {
     "key": "SYNTHETIC_MONITORING_BROWSER",
     "name": "Browser Monitor or Clickpath",
-    "price": "1200.00",
+    "price": "450.00",
     "Category": "Digital Experience Monitoring",
     "unitName": "synthetic actions",
     "priceUnit": "100000",
@@ -29,7 +128,7 @@
   {
     "key": "SYNTHETIC_MONITORING_HTTP",
     "name": "HTTP Monitor",
-    "price": "133.60",
+    "price": "100.00",
     "Category": "Digital Experience Monitoring",
     "unitName": "synthetic requests",
     "priceUnit": "100000",
@@ -38,7 +137,7 @@
   {
     "key": "USER_SESSIONS",
     "name": "Real User Monitoring",
-    "price": "300.00",
+    "price": "225.00",
     "Category": "Digital Experience Monitoring",
     "unitName": "sessions",
     "priceUnit": "100000",
@@ -56,7 +155,7 @@
   {
     "key": "USER_SESSION_REPLAYS",
     "name": "Real User Monitoring with Session Replay",
-    "price": "1200.00",
+    "price": "450.00",
     "Category": "Digital Experience Monitoring",
     "unitName": "session replay captures",
     "priceUnit": "100000",
@@ -65,10 +164,109 @@
   {
     "key": "SYNTHETIC_MONITORING_THIRD_PARTY",
     "name": "Third-Party Synthetic API Ingestion",
-    "price": "133.60",
+    "price": "100.00",
     "Category": "Digital Experience Monitoring",
     "unitName": "third-party synthetic results",
     "priceUnit": "100000",
+    "currencyCode": "USD"
+  },
+  {
+    "key": "METRICS_INGEST",
+    "name": "Metrics - Ingest & Process",
+    "price": "150.00",
+    "Category": "Metrics powered by Grail",
+    "unitName": "metric data points",
+    "priceUnit": "100000000",
+    "currencyCode": "USD"
+  },
+  {
+    "key": "METRICS_QUERY",
+    "name": "Metrics - Query",
+    "price": "0.00",
+    "Category": "Metrics powered by Grail",
+    "unitName": "gibibytes-scanned",
+    "priceUnit": "1000000",
+    "currencyCode": "USD"
+  },
+  {
+    "key": "METRICS_RETAIN",
+    "name": "Metrics - Retain",
+    "price": "700.00",
+    "Category": "Metrics powered by Grail",
+    "unitName": "gibibyte-days",
+    "priceUnit": "1000000",
+    "currencyCode": "USD"
+  },
+  {
+    "key": "TRACE_INGEST",
+    "name": "Traces - Ingest & Process",
+    "price": "2000.00",
+    "Category": "Traces powered by Grail",
+    "unitName": "gibibytes",
+    "priceUnit": "10000",
+    "currencyCode": "USD"
+  },
+  {
+    "key": "TRACE_QUERY",
+    "name": "Traces - Query",
+    "price": "3500.00",
+    "Category": "Traces powered by Grail",
+    "unitName": "gibibytes-scanned",
+    "priceUnit": "1000000",
+    "currencyCode": "USD"
+  },
+  {
+    "key": "TRACE_RETAIN",
+    "name": "Traces - Retain",
+    "price": "700.00",
+    "Category": "Traces powered by Grail",
+    "unitName": "gibibyte-days",
+    "priceUnit": "1000000",
+    "currencyCode": "USD"
+  },
+  {
+    "key": "EVENTS_INGEST",
+    "name": "Events - Ingest & Process",
+    "price": "2000.00",
+    "Category": "Events powered by Grail",
+    "unitName": "gibibytes",
+    "priceUnit": "10000",
+    "currencyCode": "USD"
+  },
+  {
+    "key": "EVENTS_ANALYZE",
+    "name": "Events - Query",
+    "price": "3500.00",
+    "Category": "Events powered by Grail",
+    "unitName": "gibibytes-scanned",
+    "priceUnit": "1000000",
+    "currencyCode": "USD"
+  },
+  {
+    "key": "EVENTS_RETAIN",
+    "name": "Events - Retain",
+    "price": "700.00",
+    "Category": "Events powered by Grail",
+    "unitName": "gibibyte-days",
+    "priceUnit": "1000000",
+    "currencyCode": "USD"
+  },
+  {
+    "key": "AUTOMATIONS",
+    "name": "Automation Workflow",
+    "price": "300.00",
+    "Category": "Automation",
+    "unitName": "workflow-hours",
+    "priceUnit": "10000",
+    "currencyCode": "USD"
+  },
+  {
+    "key": "COMPUTE",
+    "name": "AppEngine Functions - Small",
+    "price": "1000.00",
+    "Category": "AppEngine Functions",
+    "unitName": "invocations",
+    "priceUnit": "1000000",
     "currencyCode": "USD"
   },
   {
@@ -114,159 +312,6 @@
     "Category": "Platform Extensions",
     "unitName": "invocations",
     "priceUnit": "100000000",
-    "currencyCode": "USD"
-  },
-  {
-    "key": "EVENTS_INGEST",
-    "name": "Events - Ingest & Process",
-    "price": "2000.00",
-    "Category": "Events powered by Grail",
-    "unitName": "gibibytes",
-    "priceUnit": "10000",
-    "currencyCode": "USD"
-  },
-  {
-    "key": "EVENTS_ANALYZE",
-    "name": "Events - Query",
-    "price": "3500.00",
-    "Category": "Events powered by Grail",
-    "unitName": "gibibytes-scanned",
-    "priceUnit": "1000000",
-    "currencyCode": "USD"
-  },
-  {
-    "key": "EVENTS_RETAIN",
-    "name": "Events - Retain",
-    "price": "700.00",
-    "Category": "Events powered by Grail",
-    "unitName": "gibibyte-days",
-    "priceUnit": "1000000",
-    "currencyCode": "USD"
-  },
-  {
-    "key": "FOUNDATION_AND_DISCOVERY",
-    "name": "Foundation & Discovery",
-    "price": "1000.00",
-    "Category": "Application and Infrastructure Observability",
-    "unitName": "host-hours",
-    "priceUnit": "100000",
-    "currencyCode": "USD"
-  },
-  {
-    "key": "FULLSTACK_MONITORING",
-    "name": "Full-Stack Monitoring",
-    "price": "1000.00",
-    "Category": "Application and Infrastructure Observability",
-    "unitName": "memory-gibibyte-hours",
-    "priceUnit": "100000",
-    "currencyCode": "USD"
-  },
-  {
-    "key": "INFRASTRUCTURE_MONITORING",
-    "name": "Infrastructure Monitoring",
-    "price": "4000.00",
-    "Category": "Application and Infrastructure Observability",
-    "unitName": "host-hours",
-    "priceUnit": "100000",
-    "currencyCode": "USD"
-  },
-  {
-    "key": "MAINFRAME_MONITORING",
-    "name": "Mainframe Monitoring",
-    "price": "1000.00",
-    "Category": "Application and Infrastructure Observability",
-    "unitName": "MSU-hours",
-    "priceUnit": "10000",
-    "currencyCode": "USD"
-  },
-  {
-    "key": "KUBERNETES_OPERATIONS",
-    "name": "Kubernetes Platform Monitoring",
-    "price": "200.00",
-    "Category": "Container Observability",
-    "unitName": "pod-hours",
-    "priceUnit": "100000",
-    "currencyCode": "USD"
-  },
-  {
-    "key": "LOG_MANAGEMENT_INGEST",
-    "name": "Log Management & Analytics - Ingest & Process",
-    "price": "2000.00",
-    "Category": "Log Analytics",
-    "unitName": "gibibytes",
-    "priceUnit": "10000",
-    "currencyCode": "USD"
-  },
-  {
-    "key": "LOG_MANAGEMENT_ANALYZE",
-    "name": "Log Management & Analytics - Query",
-    "price": "3500.00",
-    "Category": "Log Analytics",
-    "unitName": "gibibytes-scanned",
-    "priceUnit": "1000000",
-    "currencyCode": "USD"
-  },
-  {
-    "key": "LOG_MANAGEMENT_RETAIN",
-    "name": "Log Management & Analytics - Retain",
-    "price": "700.00",
-    "Category": "Log Analytics",
-    "unitName": "gibibyte-days",
-    "priceUnit": "1000000",
-    "currencyCode": "USD"
-  },
-  {
-    "key": "LOG_MANAGEMENT_RETAIN_WIQ",
-    "name": "Log Management & Analytics - Retain with Included Queries",
-    "price": "1.00",
-    "Category": "Log Analytics",
-    "unitName": "gibibyte-days",
-    "priceUnit": "1000000",
-    "currencyCode": "USD"
-  },
-  {
-    "key": "RUNTIME_APPLICATION_PROTECTION",
-    "name": "Runtime Application Protection",
-    "price": "225.00",
-    "Category": "Application Security",
-    "unitName": "memory-gibibyte-hours",
-    "priceUnit": "100000",
-    "currencyCode": "USD"
-  },
-  {
-    "key": "RUNTIME_VULNERABILITY_ANALYTICS",
-    "name": "Runtime Vulnerability Analytics",
-    "price": "225.00",
-    "Category": "Application Security",
-    "unitName": "memory-gibibyte-hours",
-    "priceUnit": "100000",
-    "currencyCode": "USD"
-  },
-  {
-    "key": "TRACE_INGEST",
-    "name": "Traces - Ingest & Process",
-    "price": "1.00",
-    "Category": "Traces powered by Grail",
-    "unitName": "gibibytes",
-    "priceUnit": "10000",
-    "currencyCode": "USD"
-  },
-  {
-    "key": "TRACE_QUERY",
-    "name": "Traces - Query",
-    "price": "1.00",
-    "Category": "Traces powered by Grail",
-    "unitName": "gibibytes-scanned",
-    "priceUnit": "1000000",
-    "currencyCode": "USD"
-  },
-  {
-    "key": "TRACE_RETAIN",
-    "name": "Traces - Retain",
-    "price": "1.00",
-    "Category": "Traces powered by Grail",
-    "unitName": "gibibyte-days",
-    "priceUnit": "1000000",
     "currencyCode": "USD"
   }
 ]

@@ -1,4 +1,4 @@
-# DPS Cost Allocation Dashboard v3.8
+# DPS Cost Allocation Dashboard v3.9
 
 ## Overview
 **Understand your costs. Stay in control.**
@@ -57,8 +57,8 @@ Before you begin, ensure you have:
 ### Installation Steps
 1. **Download the JSON File**  
    Choose the version that fits your needs:
-   - [Standard version](DPS%20Cost%20Allocation%20Overview%20Dashboard%20v3.8.json) — cost overview by capability and cost center, no additional setup required.
-   - [With Query, Workflow & Functions support](DPS%20Cost%20Allocation%20Overview%20Dashboard%20v3.8%20w%20Query%2C%20Workflow%2C%20Functions%20support.json) & [Helper Notebook](Notebook%20helper/Cost%20Allocation%20with%20Lookup%20Tables%20Notebook%20v3.6.json) — additionally maps individual users to cost centers or products via a lookup table. Requires setting up a notebook and a workflow.
+   - [Standard version](DPS%20Cost%20Allocation%20Overview%20Dashboard%20v3.9.json) — cost overview by capability and cost center, no additional setup required.
+   - [With Query, Workflow & Functions support](DPS%20Cost%20Allocation%20Overview%20Dashboard%20v3.9%20w%20Query%2C%20Workflow%2C%20Functions%20support.json) & [Helper Notebook](Notebook%20helper/Cost%20Allocation%20with%20Lookup%20Tables%20Notebook%20v3.6.json) — additionally maps individual users to cost centers or products via a lookup table. Requires setting up a notebook and a workflow.
 
 2. **Import the Dashboard:**
    - Open the **Dashboards** app in your Dynatrace environment.
@@ -88,7 +88,7 @@ Each entry looks like this:
   {
     "key": "FULLSTACK_MONITORING",
     "name": "Full-Stack Monitoring",
-    "price": "800",
+    "price": "800.00",
     "Category": "Application and Infrastructure Observability",
     "unitName": "memory-gibibyte-hours",
     "priceUnit": "100000",
