@@ -64,7 +64,9 @@ Two configuration objects drive the dispatch in Workflow 1:
 - Agent — a connection to a cloud AI service (AWS / Azure / GCP). Has type, endpoint, credential, optional monthly duration budget. Disable to pause without losing config.
 
 ## First 5 minutes
-Shortest path from install → first investigation:
+*To install the app via Dynatrace Hub, you first need to subscribe your tenant to a Hub subscription. [Click here to learn more](https://github.com/Dynatrace/community-examples/tree/main/dynatrace%20apps#%E2%84%B9%EF%B8%8F-how-to-install-a-community-app-via-hub]).*
+
+Once installed, this is the shortest path from install → first investigation:
 
 1. Setup tab (3 min). Install IAM policy, group, service user. Install all three workflows. Set workflow actor to the service user on each.
 2. Add one agent (1 min). Configuration → add agent (any cloud) → endpoint + credential → save. Accept the outbound-whitelist prompt.
