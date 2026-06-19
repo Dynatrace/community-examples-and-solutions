@@ -12,9 +12,9 @@ Each solution goes in **one subfolder** inside its category folder:
 <category>/<solution-name>/
 ```
 
-Categories: `apps/` · `dashboards/` · `notebooks/` · `launchpads/` · `agentic-ecosystem/` · `configuration-as-code/` · `observability-blueprints/`
+Categories: `dynatrace-apps/` · `dashboards/` · `notebooks/` · `launchpads/` · `agentic-ecosystem/` · `configuration-as-code/` · `observability-blueprints/`
 
-> **Apps note:** Consumers install apps via the Dynatrace Hub, not from this repo. The `apps/` folder is an **index** — each app subfolder holds a README that describes the app and links to its Hub listing. It does not store the app's source code.
+> **Apps note:** Consumers install apps via the Dynatrace Hub, not from this repo. The `dynatrace-apps/` folder is an **index** — each app subfolder holds a README that describes the app and links to its Hub listing. It does not store the app's source code.
 
 > **Hybrid note:** Dashboards, notebooks, and launchpads have separate folders. A solution that combines several types lives in **one** folder (its primary artifact) and is **cross-linked** from the others — see [§7 Hybrid solutions & cross-linking](#7-hybrid-solutions--cross-linking).
 

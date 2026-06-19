@@ -26,7 +26,7 @@ The repository is organized by artifact category. Each folder has its own README
 
 | Folder | Category | What you'll find |
 |--------|----------|------------------|
-| [`apps/`](./apps) | 🧩 **Apps** | An **index** of full Dynatrace Apps (AI workflow connectors, CI/CD Observability, Cloud SRE Agents). Consumers install these via the **Hub**, not from this repo — each entry links to its Hub listing. |
+| [`dynatrace-apps/`](./dynatrace-apps) | 🧩 **Apps** | An **index** of full Dynatrace Apps (AI workflow connectors, CI/CD Observability, Cloud SRE Agents). Consumers install these via the **Hub**, not from this repo — each entry links to its Hub listing. |
 | [`observability-blueprints/`](./observability-blueprints) | 🗺 **Observability Blueprints** | End-to-end reference setups that combine multiple artifacts into a complete solution for a scenario. |
 
 > Dashboards, notebooks, and launchpads each have their own folder. A solution that combines several (e.g. a dashboard that drills into a notebook) lives under its **primary** artifact, with the other pieces in the same subfolder.
@@ -58,6 +58,7 @@ Most apps in this repository are delivered via the [Dynatrace Hub](https://docs.
 
 Other Dynatrace community repositories worth knowing:
 
+- **[dynatrace-configuration-as-code-samples](https://github.com/Dynatrace/dynatrace-configuration-as-code-samples)** — Monaco / Terraform configuration samples (being migrated into this repo over time).
 - **[dynatrace-oss/CustomerSuccess](https://github.com/dynatrace-oss/CustomerSuccess)** — high-quality reference dashboards: Dynatrace Tenant Review, Platform Adoption, and Software Obsolescence Management.
 
 ---
