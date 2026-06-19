@@ -1,28 +1,73 @@
-# 🌐 Dynatrace Community Examples
+# Dynatrace Community Examples & Solutions
 
-Welcome to the **Dynatrace Community Examples** repository!  
+**A community-driven library of reusable Dynatrace artifacts — dashboards, apps, agents, and configurations — built by Dynatrace colleagues to solve real-world customer scenarios.**
 
-This space is dedicated to sharing, exploring, and contributing real-world configurations and examples across various Dynatrace apps and capabilities.
+Start from something that already works instead of rebuilding from scratch: accelerate POCs, raise quality in the field, and grow a shared knowledge base that compounds as more people contribute.
 
-## 🎯 Purpose
+> ⚠️ **Community Examples & Solutions are not officially maintained or supported by Dynatrace.** They are shared as-is by the community. Use them as inspiration and starting points, and review before using in production.
 
-This repository serves as a **community-driven collection** to help you:
+---
 
-- Discover reusable configuration patterns for Dynatrace apps  
-- Learn from real-world use cases shared by the community  
-- Accelerate setup and experimentation with proven examples  
+## What's inside
 
-## 📁 Structure
+The repository is organized by artifact category. Each folder has its own README with the examples it contains and how to use them.
 
-The repository is organized into subfolders for different areas of Dynatrace configuration, such as:
+### 🟢 Ready to use & quick to contribute
 
-- **Dashboards** – ready-to-use dashboard examples for various use cases  
-- **Config as Code** – examples for automating configuration management  
-- **Agentic Ecosystem** – get started quickly on your Agentic AI use cases  
-- *(and more to come!)*  
+| Folder | Category | What you'll find |
+|--------|----------|------------------|
+| [`dashboards/`](./dashboards) | 📊 **Dashboards** | Ready-to-import dashboards for real use cases. |
+| [`notebooks/`](./notebooks) | 📓 **Notebooks** | Analysis notebooks that walk through an investigation or flow. |
+| [`launchpads/`](./launchpads) | 🚀 **Launchpads** | Curated launchpads that guide users to the right apps and dashboards. |
+| [`agentic-ecosystem/`](./agentic-ecosystem) | ✨ **Agentic Ecosystem** | Agent definitions, prompts, and workflow templates to jump-start Agentic AI use cases. |
+| [`configuration-as-code/`](./configuration-as-code) | ⚙️ **Configuration as Code** | Monaco / Terraform examples for automating configuration management. |
 
-Each folder includes its own README with detailed guidance and usage instructions for the examples inside.
+### 🟡 Higher-effort tracks
 
-# 📄 License
+| Folder | Category | What you'll find |
+|--------|----------|------------------|
+| [`apps/`](./apps) | 🧩 **Apps** | An **index** of full Dynatrace Apps (AI workflow connectors, CI/CD Observability, Cloud SRE Agents). Consumers install these via the **Hub**, not from this repo — each entry links to its Hub listing. |
+| [`observability-blueprints/`](./observability-blueprints) | 🗺 **Observability Blueprints** | End-to-end reference setups that combine multiple artifacts into a complete solution for a scenario. |
 
-This repository is licensed under the **Apache License, Version 2.0**.
+> Dashboards, notebooks, and launchpads each have their own folder. A solution that combines several (e.g. a dashboard that drills into a notebook) lives under its **primary** artifact, with the other pieces in the same subfolder.
+
+---
+
+## How to contribute
+
+Community Examples & Solutions are contributed by **Dynatrace employees**.
+
+- **Dynatrace employees:** the contribution process lives on the internal **Community Examples & Solutions** page (search "Community Examples & Solutions" on the internal SharePoint). See also **[CONTRIBUTING.md](./CONTRIBUTING.md)**.
+- **Everyone:** these solutions are free to use and adapt. Found a problem with one? Open a [GitHub issue](../../issues).
+
+Every contribution meets the [quality bar](./CONTRIBUTING.md): clear customer value, reusable by design (no hard-coded IDs/environments), production-ready, low adoption friction, and self-service documentation. All submissions follow the **[repository standards](./STANDARDS.md)** — the fastest way to get it right is to copy the **[gold-standard example](./example-entry/dashboards/order-fulfillment-observability/)**.
+
+---
+
+## Installing a Custom App
+
+Most apps in this repository are delivered via the [Dynatrace Hub](https://docs.dynatrace.com/docs/shortlink/hub) using the [Hub subscriptions](https://docs.dynatrace.com/docs/shortlink/hub#add-subscription) concept — community-built apps are delivered exactly like any other Dynatrace app.
+
+1. **Request access** — email [community-apps@dynatrace.com](mailto:community-apps@dynatrace.com) with the **app name**, your **account name**, and your **tenant ID**.
+2. **Get your channel ID** — once we verify your request, we'll send you the channel ID for that app.
+3. **Subscribe & install** — in your Dynatrace environment, open **Settings → General → Hub subscriptions → Add subscription**, give it a meaningful name, paste the channel ID, and **Save**. Then search for the app in **Hub** and install it.
+
+---
+
+## Related libraries
+
+Other Dynatrace community repositories worth knowing:
+
+- **[dynatrace-oss/CustomerSuccess](https://github.com/dynatrace-oss/CustomerSuccess)** — high-quality reference dashboards: Dynatrace Tenant Review, Platform Adoption, and Software Obsolescence Management.
+
+---
+
+## Questions & support
+
+- 🐛 **Found an issue with an example?** Open a [GitHub issue](../../issues).
+- 🧩 **App access & install:** email [community-apps@dynatrace.com](mailto:community-apps@dynatrace.com) — see [Installing a Custom App](#installing-a-custom-app) above.
+- 🏢 **Dynatrace employees:** see the internal **Community Examples & Solutions** page for contribution help.
+
+---
+
+*Part of the Dynatrace Open Source Initiative. Projects here are maintained by the community and, unless stated otherwise, are not officially supported by Dynatrace.*

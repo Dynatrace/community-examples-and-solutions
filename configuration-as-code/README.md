@@ -1,20 +1,16 @@
-# ⚙️ Community Examples: Configuration-as-Code
+# ⚙️ Configuration as Code
 
-Welcome to the **Dynatrace configuration-as-code examples** folder!
-This space is dedicated to sharing, exploring, and contributing **real-world configuration-as-code samples** built with Dynatrace.
-Whether you're a Dynatrace user, partner, or customer, you're invited to contribute configurations that showcase best practices, efficient setups, or innovative solutions.
+Monaco and Terraform examples for automating Dynatrace configuration management — covering pipeline observability (GitHub, GitLab, Azure DevOps, ArgoCD), SLOs, Site Reliability Guardian, access control / IAM, auto-tagging, Grail buckets, dashboards, and more.
 
----
+Each sample is in its own subfolder. Browse the folders above; most work with **Monaco**, and many also have a **Terraform** variant (suffixed `_terraform`).
 
-## 🚀 Purpose
+> These samples were migrated here from the former `dynatrace-configuration-as-code-samples` repository and are maintained as part of Community Examples & Solutions.
 
-This folder serves as a **community-driven collection** of configuration-as-code examples to help others:
+## What good looks like
 
-- Get inspired by real use cases
-- Learn how to define and manage configurations effectively
-- Accelerate setup for common monitoring and operational scenarios
+- **Fully parameterized** — variables/placeholders for anything environment-specific.
+- **Clear blast radius** — state exactly what the config creates or modifies, plus any merge considerations.
 
-#### All Configuration as Code Examples are currently still stored here: https://github.com/Dynatrace/dynatrace-configuration-as-code-samples# and will be moved to this repository over the upcoming weeks.
+## Contributing
 
-## License
-[Apache License v2.0](https://github.com/Dynatrace/community-examples/blob/main/LICENSE.txt).
+Follow the [repository standards](../STANDARDS.md) and the [quality bar](../CONTRIBUTING.md). **Dynatrace employees:** see the internal Community Examples & Solutions page for how to submit.

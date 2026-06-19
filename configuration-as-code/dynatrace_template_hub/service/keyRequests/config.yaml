@@ -1,0 +1,15 @@
+configs:
+- id: serviceKeyRequest1
+  type:
+    settings:
+      schema: builtin:settings.subscriptions.service
+      scope: SERVICE-AA9C6E2B8BEEC6D8
+  config:
+    name: exampleKeyRequest1
+    template: object.json
+    skip: false
+    parameters:
+      keyRequests:
+        type: list
+        values:
+        - /CalculateRecommendations

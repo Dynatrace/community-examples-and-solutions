@@ -1,29 +1,27 @@
-# 📊 Community Examples: Dashboards
+# 📊 Dashboards
 
-Welcome to the collection of community examples of **Dynatrace dashboards** examples!  
-This space is dedicated to sharing, exploring, and contributing **real-world dashboard configurations** built with Dynatrace:
-- Get inspired by real use cases
-- Learn from others how to visualize data effectively
-- Accelerate setup for common scenarios
+Ready-to-import dashboards for real-world use cases. Each solution is its own subfolder with a README, screenshot(s), and the dashboard JSON. If a dashboard drills into a notebook or launchpad, keep those files in the same subfolder.
 
-Each folder in this repo represents an individual example. 
-** Happy browsing **
-  
+## What each example includes
 
-## 🚀 Getting started
+- A **JSON file** containing the dashboard configuration.
+- **Screenshots** showcasing the layout and design.
+- A **contributor README** with the example's purpose, setup steps, and customization tips.
 
-- To get started with Dynatrace dashboards, check out the [app spotlight](https://www.youtube.com/watch?v=K8rcj7fK9NM.) or dive into the [documentation](https://docs.dynatrace.com/docs/shortlink/dashboards). 
-- Each dashboard example includes:  
-  - **A JSON file** containing the dashboard configuration. Y 
-  - **Screenshots** showcasing the dashboard’s layout and design.  
-  - **A contributor README** providing details on the dashboard’s purpose, setup steps, and customization tips.  
-- If you want to use one of the examples in your environment, download the respective JSON file, open the Dashboards in your environment, and upload the file. Please refer to [our documentation](https://docs.dynatrace.com/docs/shortlink/dashboards#manage-dashboards) ("Upload a dashboard") if you encounter any issues. 
+## How to use an example
 
-Don't have an account or environment yet? [Sign up](https://www.dynatrace.com/signup/playground/) and start experimenting in the Dynatrace [playground](https://playground.apps.dynatrace.com/) instead.
+Download the respective JSON file, open **Dashboards** in your environment, and upload the file. See ["Upload a dashboard"](https://docs.dynatrace.com/docs/shortlink/dashboards#manage-dashboards) if you run into any issues. No environment yet? [Sign up](https://www.dynatrace.com/signup/playground/) and try the Dynatrace [playground](https://playground.apps.dynatrace.com/).
 
-## Looking for more examples?
+Looking for more? See the [ready-made dashboards](https://docs.dynatrace.com/docs/analyze-explore-automate/dashboards-and-notebooks/ready-made-documents/ready-made-dashboards) available directly within Dashboards.
 
-Looking for more inspiration? Check out our [ready-made dashboards](https://docs.dynatrace.com/docs/analyze-explore-automate/dashboards-and-notebooks/ready-made-documents/ready-made-dashboards) available directly within Dashboards. 
+## Contributing
 
-## License
-[Apache License v2.0](https://github.com/Dynatrace/community-examples/blob/main/LICENSE.txt).
+Follow the [repository standards](../STANDARDS.md) and the [quality bar](../CONTRIBUTING.md), and copy the [gold-standard example](../example-entry/dashboards/order-fulfillment-observability/). **Dynatrace employees:** see the internal Community Examples & Solutions page for how to submit.
+
+## Also includes Dashboards (primary home elsewhere)
+
+Solutions that contain a dashboard but live in another folder (because their primary artifact is a notebook or launchpad). The link points to each solution's real home.
+
+- _None yet._
+
+*(See [STANDARDS.md §7](../STANDARDS.md#7-hybrid-solutions--cross-linking) for how cross-linking works.)*

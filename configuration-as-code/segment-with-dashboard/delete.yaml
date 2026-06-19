@@ -1,0 +1,8 @@
+# generated using `monaco generate deletefile manifest.yaml`
+
+delete:
+- type: document
+  objectId: dashboard-with-segment
+- project: segments
+  type: segment
+  id: segment

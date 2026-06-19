@@ -1,0 +1,28 @@
+configs:
+  - id: gitlab_merge_requests
+    config:
+      name: GitLab Merge Requests
+      template: gitlab.merge_request.json
+      skip: false
+    type:
+      document:
+        kind: dashboard
+        private: false
+  - id: gitlab_pipeline_pulse
+    config:
+      name: GitLab Pipeline Pulse
+      template: gitlab.pipeline.json
+      skip: false
+    type:
+      document:
+        kind: dashboard
+        private: false
+  - id: gitlab_deployments
+    config:
+      name: GitLab Deployments
+      template: gitlab.deployments.json
+      skip: false
+    type:
+      document:
+        kind: dashboard
+        private: false

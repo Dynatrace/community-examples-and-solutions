@@ -1,0 +1,15 @@
+configs:
+- id: serviceMutedRequests
+  type:
+    settings:
+      schema: builtin:settings.mutedrequests
+      scope: SERVICE-AA9C6E2B8BEEC6D8
+  config:
+    name: exampleMutedRequest
+    template: object.json
+    skip: false
+    parameters:
+      muteReqNames:
+        type: list
+        values:
+        - /temp
