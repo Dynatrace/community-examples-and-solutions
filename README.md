@@ -1,6 +1,6 @@
 # Dynatrace Community Examples & Solutions
 
-**A community-driven library of reusable Dynatrace artifacts — dashboards, apps, agents, and configurations — built by Dynatrace colleagues to solve real-world customer scenarios.**
+**A community-driven library of reusable Dynatrace artifacts — dashboards, apps, agents, and configurations — built to solve real-world customer scenarios.**
 
 Start from something that already works instead of rebuilding from scratch: accelerate POCs, raise quality in the field, and grow a shared knowledge base that compounds as more people contribute.
 
@@ -21,11 +21,6 @@ The repository is organized by artifact category. Each folder has its own README
 | [`launchpads/`](./launchpads) | 🚀 **Launchpads** | Curated launchpads that guide users to the right apps and dashboards. |
 | [`agentic-ecosystem/`](./agentic-ecosystem) | ✨ **Agentic Ecosystem** | Agent definitions, prompts, and workflow templates to jump-start Agentic AI use cases. |
 | [`configuration-as-code/`](./configuration-as-code) | ⚙️ **Configuration as Code** | Monaco / Terraform examples for automating configuration management. |
-
-### 🟡 Higher-effort tracks
-
-| Folder | Category | What you'll find |
-|--------|----------|------------------|
 | [`dynatrace-apps/`](./dynatrace-apps) | 🧩 **Apps** | An **index** of full Dynatrace Apps (AI workflow connectors, CI/CD Observability, Cloud SRE Agents). Consumers install these via the **Hub**, not from this repo — each entry links to its Hub listing. |
 | [`observability-blueprints/`](./observability-blueprints) | 🗺 **Observability Blueprints** | End-to-end reference setups that combine multiple artifacts into a complete solution for a scenario. |
 
@@ -51,15 +46,6 @@ Most apps in this repository are delivered via the [Dynatrace Hub](https://docs.
 1. **Request access** — email [community-apps@dynatrace.com](mailto:community-apps@dynatrace.com) with the **app name**, your **account name**, and your **tenant ID**.
 2. **Get your channel ID** — once we verify your request, we'll send you the channel ID for that app.
 3. **Subscribe & install** — in your Dynatrace environment, open **Settings → General → Hub subscriptions → Add subscription**, give it a meaningful name, paste the channel ID, and **Save**. Then search for the app in **Hub** and install it.
-
----
-
-## Related libraries
-
-Other Dynatrace community repositories worth knowing:
-
-- **[dynatrace-configuration-as-code-samples](https://github.com/Dynatrace/dynatrace-configuration-as-code-samples)** — Monaco / Terraform configuration samples (being migrated into this repo over time).
-- **[dynatrace-oss/CustomerSuccess](https://github.com/dynatrace-oss/CustomerSuccess)** — high-quality reference dashboards: Dynatrace Tenant Review, Platform Adoption, and Software Obsolescence Management.
 
 ---
 
