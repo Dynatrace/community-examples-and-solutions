@@ -9,11 +9,11 @@ Connect Claude with Dynatrace using this action for Workflows. It allows to defi
 - **Execute prompt:** define and execute the prompt defined in the workflow action
 - **Handle response:** store and analyze response
 
-<img width="700" alt="cicd-image-1" src="https://github.com/Dynatrace/community-examples/blob/main/dynatrace%20apps/claude%20connector/Claude-workflow.png" />
+<img width="700" alt="cicd-image-1" src="Claude-workflow.png" />
 
 *Dynatrace workflow with Claude action*
 
-<img width="700" alt="cicd-image-1" src="https://github.com/Dynatrace/community-examples/blob/main/dynatrace%20apps/claude%20connector/Claude-example.png" />
+<img width="700" alt="cicd-image-1" src="Claude-example.png" />
 
 *Illustrative example querying for log data and asking Claude for further error analysis.*
 
@@ -59,18 +59,18 @@ export default async function () {
 
 ### 3. Configure the Claude Task
 - Add a new task and search for **Claude**.
-<img width="500" height="350" alt="cicd-image-1" src="https://github.com/Dynatrace/community-examples/blob/main/dynatrace%20apps/claude%20connector/workflow-search-claude.png" />
+<img width="500" height="350" alt="cicd-image-1" src="workflow-search-claude.png" />
 
 - Under **Input**, click + **Create a new connection**.
 
-<img width="420" alt="cicd-image-2" src="https://github.com/Dynatrace/community-examples/blob/main/dynatrace%20apps/claude%20connector/claude-task.png" />
+<img width="420" alt="cicd-image-2" src="claude-task.png" />
 
 - Enter a **Connection Name**, your **Model ID**, and your **API Key**.
 
 > Note: Do not modify the URL unless you are using a custom endpoint.
 
 - Click **Add item**. Your connection should now show up on the Connection dropdown for the task (refresh page if not).
-<img width="550" height="600" alt="cicd-image-3" src="https://github.com/Dynatrace/community-examples/blob/main/dynatrace%20apps/claude%20connector/settings-claude.png" />
+<img width="550" height="600" alt="cicd-image-3" src="settings-claude.png" />
 
 ### 4. Set up the Prompt
 - **Prompt:** Enter the specific question or instruction for the AI (e.g., "Analyze these logs and suggest a potential root cause").

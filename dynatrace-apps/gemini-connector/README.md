@@ -9,11 +9,11 @@ Connect Google Gemini with Dynatrace using this action for Workflows. It allows 
 - **Execute prompt:** define and execute the prompt defined in the workflow action
 - **Handle response:** store and analyze response
 
-<img width="700" alt="cicd-image-1" src="https://github.com/Dynatrace/community-examples/blob/main/dynatrace%20apps/gemini%20connector/workflow.png" />
+<img width="700" alt="cicd-image-1" src="workflow.png" />
 
 *Dynatrace workflow with Gemini action*
 
-<img width="700" alt="cicd-image-1" src="https://github.com/Dynatrace/community-examples/blob/main/dynatrace%20apps/gemini%20connector/example.png" />
+<img width="700" alt="cicd-image-1" src="example.png" />
 
 *Illustrative example querying for log data and asking Gemini for further error analysis.*
 
@@ -59,18 +59,18 @@ export default async function () {
 
 ### 3. Configure the Gemini Task
 - Add a new task and search for **Gemini**.
-<img width="500" height="350" alt="cicd-image-1" src="https://github.com/Dynatrace/community-examples/blob/main/dynatrace%20apps/gemini%20connector/chose%20action.png" />
+<img width="500" height="350" alt="cicd-image-1" src="chose%20action.png" />
 
 - Under **Input**, click + **Create a new connection**.
 
-<img width="420" height="315" alt="cicd-image-2" src="https://github.com/Dynatrace/community-examples/blob/main/dynatrace%20apps/gemini%20connector/workflows.png" />
+<img width="420" height="315" alt="cicd-image-2" src="workflows.png" />
 
 - Enter a **Connection Name**, your **Model ID**, and your **API Key** (which you can generate here: https://aistudio.google.com/api-keys).
 
 > Note: Do not modify the URL unless you are using a custom endpoint.
 
 - Click **Add item**. Your connection should now show up on the Connection dropdown for the task (refresh page if not).
-<img width="550" height="600" alt="cicd-image-3" src="https://github.com/Dynatrace/community-examples/blob/main/dynatrace%20apps/gemini%20connector/gemini%20connections.png" />
+<img width="550" height="600" alt="cicd-image-3" src="gemini%20connections.png" />
 
 ### 4. Set up the Prompt
 - **Prompt:** Enter the specific question or instruction for the AI (e.g., "Analyze these logs and suggest a potential root cause").

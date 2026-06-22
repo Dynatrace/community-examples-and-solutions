@@ -9,11 +9,11 @@ Connect OpenAI with Dynatrace using this action for Workflows. It allows to defi
 - **Execute prompt:** define and execute the prompt defined in the workflow action
 - **Handle response:** store and analyze response
 
-<img width="700" alt="cicd-image-1" src="https://github.com/Dynatrace/community-examples/blob/main/dynatrace%20apps/openai%20connector/OpenAI-workflow.png" />
+<img width="700" alt="cicd-image-1" src="OpenAI-workflow.png" />
 
 *Dynatrace workflow with OpenAI action*
 
-<img width="700" alt="cicd-image-1" src="https://github.com/Dynatrace/community-examples/blob/main/dynatrace%20apps/openai%20connector/OpenAI-example.png" />
+<img width="700" alt="cicd-image-1" src="OpenAI-example.png" />
 
 *Illustrative example querying for log data and asking OpenAI for further error analysis.*
 
@@ -59,18 +59,18 @@ export default async function () {
 
 ### 3. Configure the OpenAI Task
 - Add a new task and search for **OpenAI**.
-<img width="500" height="350" alt="cicd-image-1" src="https://github.com/Dynatrace/community-examples/blob/main/dynatrace%20apps/openai%20connector/workflow-search-openai.png" />
+<img width="500" height="350" alt="cicd-image-1" src="workflow-search-openai.png" />
 
 - Under **Input**, click + **Create a new connection**.
 
-<img width="420" alt="cicd-image-2" src="https://github.com/Dynatrace/community-examples/blob/main/dynatrace%20apps/openai%20connector/openai-task.png" />
+<img width="420" alt="cicd-image-2" src="openai-task.png" />
 
 - Enter a **Connection Name**, your **Model ID**, and your **API Key** (which you can generate here: https://aistudio.google.com/api-keys).
 
 > Note: Do not modify the URL unless you are using a custom endpoint.
 
 - Click **Add item**. Your connection should now show up on the Connection dropdown for the task (refresh page if not).
-<img width="550" height="600" alt="cicd-image-3" src="https://github.com/Dynatrace/community-examples/blob/main/dynatrace%20apps/openai%20connector/settings-openai.png" />
+<img width="550" height="600" alt="cicd-image-3" src="settings-openai.png" />
 
 ### 4. Set up the Prompt
 - **Prompt:** Enter the specific question or instruction for the AI (e.g., "Analyze these logs and suggest a potential root cause").

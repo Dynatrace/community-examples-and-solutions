@@ -1,7 +1,7 @@
 # CI/CD Observability — Dynatrace App
 
 Unified observability for **pipelines, jobs, stages and PRs** across multiple CI/CD providers (Azure DevOps, GitHub, GitLab, etc.) inside **Dynatrace Platform**.
-<img width="1677" height="914" alt="cicd-image-1" src="https://github.com/Dynatrace/community-examples/blob/main/dynatrace%20apps/CI-CD%20Pipeline/app-overview.jpg" />
+<img width="1677" height="914" alt="cicd-image-1" src="app-overview.jpg" />
 
 ---
 
@@ -36,11 +36,11 @@ Unified observability for **pipelines, jobs, stages and PRs** across multiple CI
 1. Go to your newly installed app **CI/CD Observability**
 2. Navigate to Setup tab to find your target techonology. Follow the instructions to **Setup the webhooks on the chosen provider**
 3. Click **Import Configuration** to import the Openpipeline Rules to your environement (Those rules basically translate the incoming webhook events into SDLC Events (Opentelemetry Standard), which is then consumed by the App)
-  <img width="1681" height="838" alt="cicd-image-4" src="https://github.com/Dynatrace/community-examples/blob/main/dynatrace%20apps/CI-CD%20Pipeline/configuration-wizard.jpg" />
+  <img width="1681" height="838" alt="cicd-image-4" src="configuration-wizard.jpg" />
 4. Navigate to CI/CD Observability to start exploring the data.
-    <img width="1677" height="914" alt="cicd-image-2" src="https://github.com/Dynatrace/community-examples/blob/main/dynatrace%20apps/CI-CD%20Pipeline/explore-data.jpg" />
+    <img width="1677" height="914" alt="cicd-image-2" src="explore-data.jpg" />
 5. Filters are only applied after clicking the refresh button to avoid unnecessary queries
-    <img width="1684" height="563" alt="cicd-image-3" src="https://github.com/Dynatrace/community-examples/blob/main/dynatrace%20apps/CI-CD%20Pipeline/apply-filter.jpg" />
+    <img width="1684" height="563" alt="cicd-image-3" src="apply-filter.jpg" />
    
 
 ---
