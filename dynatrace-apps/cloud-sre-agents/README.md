@@ -6,15 +6,15 @@ When Dynatrace Intelligence detects a problem, Cloud SRE Agents calls in the clo
 One screen. No tab-switching. The work starts without you.
 
 ```
-  Without Cloud SRE Agents      With Cloud SRE Agents
-  ───────────────────────       ──────────────────────
-  02:00  🔔 page                02:00  🔔 page + agents dispatch
-  02:05  VPN, open laptop       02:03  on-call reads root cause
-  02:25  trawl AWS console      02:07  first agent finding appears
-  03:15  form a hypothesis      02:10  remediation path suggested
-  04:15  resolved               02:12  on-call approves, resolved
+  Without Cloud SRE Agents       🤖 With Cloud SRE Agents
+  ────────────────────────────   ──────────────────────────────────────
+  02:00  page 🔔                 02:00  🔔 page + agents dispatch
+  02:05  VPN, open laptop 💻     02:03  👀 on-call reads root cause
+  02:25  trawl AWS console ⚙️    02:07  💡 first agent finding appears
+  03:15  form a hypothesis 💭    02:10  📋 remediation path suggested
+  04:15  resolved ✅             02:12  ✅ on-call approves, resolved
 
-  MTTR ≈ 2h15m                  MTTR ≈ 12m   (illustrative)
+  MTTR ≈ 2h15m ⏱️                MTTR ≈ 🚀 12m   (illustrative)
 ```
 
 ## How It Works
@@ -83,6 +83,24 @@ The next matching problem dispatches automatically. Findings appear on the probl
 2. The setup flow surfaces a webhook URL and a webhook secret — copy both.
     - Endpoint URL: the webhook URL from the setup flow.
     - Credential: the webhook secret from the setup flow.
+
+Follow the description in the [AWS documentation](https://docs.aws.amazon.com/devopsagent/latest/userguide/connecting-telemetry-sources-connecting-dynatrace.html) on how to connect Dynatrace with the AWS DevOps Agent. 
+When adding Dynatrace as a Telemetry capability provider, you need to create a Dynatrace OAuth Client. You have to set-up this  clientwith the following permissions:
+```
+storage:bizevents:read
+storage:logs:read
+storage:events:read
+storage:metrics:read
+storage:system:read
+storage:buckets:read
+storage:spans:read
+storage:entities:read
+storage:smartscape:read
+storage:fieldsets:read
+storage:user.events:read
+storage:security.events:read
+openpipeline:events:ingest
+```
 
 ### Azure SRE Agent
 1. In Microsoft Entra ID → App registrations, create a new app and generate a client secret.
